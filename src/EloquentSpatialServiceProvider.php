@@ -2,7 +2,8 @@
 
 declare(strict_types=1);
 
-namespace MatanYadaev\EloquentSpatial;
+namespace Setwise\EloquentSpatial;
+
 
 use Illuminate\Database\Connection;
 use Illuminate\Database\DatabaseServiceProvider;

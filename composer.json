@@ -1,12 +1,12 @@
 {
-  "name": "matanyadaev/laravel-eloquent-spatial",
-  "description": "Spatial library for Laravel",
-  "homepage": "https://github.com/matanyadaev/laravel-eloquent-spatial",
+  "name": "setwise/postgres-spatial",
+  "description": "fork of matanyadeav/laravel-eloquent-spatial for postgres https://github.com/matanyadaev/laravel-eloquent-spatial",
+  "homepage": "https://setwise.com",
   "license": "MIT",
   "authors": [
     {
-      "name": "Matan Yadaev",
-      "email": "matan.yed@gmail.com"
+      "name": "Setwise",
+      "email": "setwise@setwise.com"
     }
   ],
   "require": {
@@ -27,12 +27,12 @@
   },
   "autoload": {
     "psr-4": {
-      "MatanYadaev\\EloquentSpatial\\": "src"
+      "Setwise\\EloquentSpatial\\": "src"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "MatanYadaev\\EloquentSpatial\\Tests\\": "tests"
+      "Setwise\\EloquentSpatial\\Tests\\": "tests"
     }
   },
   "scripts": {
@@ -53,7 +53,7 @@
   "extra": {
     "laravel": {
       "providers": [
-        "MatanYadaev\\EloquentSpatial\\EloquentSpatialServiceProvider"
+        "Setwise\\EloquentSpatial\\EloquentSpatialServiceProvider"
       ]
     }
   }
