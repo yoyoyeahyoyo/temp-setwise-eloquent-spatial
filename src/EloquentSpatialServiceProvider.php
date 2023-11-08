@@ -8,13 +8,13 @@ namespace Setwise\EloquentSpatial;
 use Illuminate\Database\Connection;
 use Illuminate\Database\DatabaseServiceProvider;
 use Illuminate\Support\Facades\DB;
-use MatanYadaev\EloquentSpatial\Doctrine\GeometryCollectionType;
-use MatanYadaev\EloquentSpatial\Doctrine\LineStringType;
-use MatanYadaev\EloquentSpatial\Doctrine\MultiLineStringType;
-use MatanYadaev\EloquentSpatial\Doctrine\MultiPointType;
-use MatanYadaev\EloquentSpatial\Doctrine\MultiPolygonType;
-use MatanYadaev\EloquentSpatial\Doctrine\PointType;
-use MatanYadaev\EloquentSpatial\Doctrine\PolygonType;
+use Setwise\EloquentSpatial\Doctrine\GeometryCollectionType;
+use Setwise\EloquentSpatial\Doctrine\LineStringType;
+use Setwise\EloquentSpatial\Doctrine\MultiLineStringType;
+use Setwise\EloquentSpatial\Doctrine\MultiPointType;
+use Setwise\EloquentSpatial\Doctrine\MultiPolygonType;
+use Setwise\EloquentSpatial\Doctrine\PointType;
+use Setwise\EloquentSpatial\Doctrine\PolygonType;
 
 class EloquentSpatialServiceProvider extends DatabaseServiceProvider
 {

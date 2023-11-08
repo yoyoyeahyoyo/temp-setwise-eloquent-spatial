@@ -1,8 +1,8 @@
 <?php
 
-namespace MatanYadaev\EloquentSpatial\Traits;
+namespace Setwise\EloquentSpatial\Traits;
 
-use MatanYadaev\EloquentSpatial\SpatialBuilder;
+use Setwise\EloquentSpatial\SpatialBuilder;
 
 trait HasSpatial
 {

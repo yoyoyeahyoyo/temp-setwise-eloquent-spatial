@@ -1,19 +1,19 @@
 <?php
 
-namespace MatanYadaev\EloquentSpatial\Tests\TestModels;
+namespace Setwise\EloquentSpatial\Tests\TestModels;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use MatanYadaev\EloquentSpatial\Objects\GeometryCollection;
-use MatanYadaev\EloquentSpatial\Objects\LineString;
-use MatanYadaev\EloquentSpatial\Objects\MultiLineString;
-use MatanYadaev\EloquentSpatial\Objects\MultiPoint;
-use MatanYadaev\EloquentSpatial\Objects\MultiPolygon;
-use MatanYadaev\EloquentSpatial\Objects\Point;
-use MatanYadaev\EloquentSpatial\Objects\Polygon;
-use MatanYadaev\EloquentSpatial\SpatialBuilder;
-use MatanYadaev\EloquentSpatial\Tests\TestFactories\TestPlaceFactory;
-use MatanYadaev\EloquentSpatial\Traits\HasSpatial;
+use Setwise\EloquentSpatial\Objects\GeometryCollection;
+use Setwise\EloquentSpatial\Objects\LineString;
+use Setwise\EloquentSpatial\Objects\MultiLineString;
+use Setwise\EloquentSpatial\Objects\MultiPoint;
+use Setwise\EloquentSpatial\Objects\MultiPolygon;
+use Setwise\EloquentSpatial\Objects\Point;
+use Setwise\EloquentSpatial\Objects\Polygon;
+use Setwise\EloquentSpatial\SpatialBuilder;
+use Setwise\EloquentSpatial\Tests\TestFactories\TestPlaceFactory;
+use Setwise\EloquentSpatial\Traits\HasSpatial;
 
 /**
  * @property Point $point

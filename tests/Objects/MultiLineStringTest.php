@@ -1,12 +1,12 @@
 <?php
 
 use Illuminate\Foundation\Testing\DatabaseMigrations;
-use MatanYadaev\EloquentSpatial\Enums\Srid;
-use MatanYadaev\EloquentSpatial\Objects\Geometry;
-use MatanYadaev\EloquentSpatial\Objects\LineString;
-use MatanYadaev\EloquentSpatial\Objects\MultiLineString;
-use MatanYadaev\EloquentSpatial\Objects\Point;
-use MatanYadaev\EloquentSpatial\Tests\TestModels\TestPlace;
+use Setwise\EloquentSpatial\Enums\Srid;
+use Setwise\EloquentSpatial\Objects\Geometry;
+use Setwise\EloquentSpatial\Objects\LineString;
+use Setwise\EloquentSpatial\Objects\MultiLineString;
+use Setwise\EloquentSpatial\Objects\Point;
+use Setwise\EloquentSpatial\Tests\TestModels\TestPlace;
 
 uses(DatabaseMigrations::class);
 

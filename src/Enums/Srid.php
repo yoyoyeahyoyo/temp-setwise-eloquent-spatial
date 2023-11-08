@@ -1,6 +1,6 @@
 <?php
 
-namespace MatanYadaev\EloquentSpatial\Enums;
+namespace Setwise\EloquentSpatial\Enums;
 
 enum Srid: int
 {

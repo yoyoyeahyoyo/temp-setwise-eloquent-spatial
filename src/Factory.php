@@ -9,19 +9,14 @@ use GeometryCollection as geoPHPGeometryCollection;
 use geoPHP;
 use InvalidArgumentException;
 use LineString as geoPHPLineString;
-use Setwise\EloquentSpatial\Geometry;
+use Setwise\EloquentSpatial\Objects\Geometry;
 use Setwise\EloquentSpatial\Objects\Point;
 use Setwise\EloquentSpatial\Objects\Polygon;
-
-
-#use MatanYadaev\EloquentSpatial\Objects\Geometry;
-#use MatanYadaev\EloquentSpatial\Objects\GeometryCollection;
-#use MatanYadaev\EloquentSpatial\Objects\LineString;
-#use MatanYadaev\EloquentSpatial\Objects\MultiLineString;
-#use MatanYadaev\EloquentSpatial\Objects\MultiPoint;
-#use MatanYadaev\EloquentSpatial\Objects\MultiPolygon;
-#use  Swof\Geometry\Objects\Point;
-#use MatanYadaev\EloquentSpatial\Objects\Polygon;
+use Setwise\EloquentSpatial\Objects\GeometryCollection;
+use Setwise\EloquentSpatial\Objects\LineString;
+use Setwise\EloquentSpatial\Objects\MultiLineString;
+use Setwise\EloquentSpatial\Objects\MultiPoint;
+use Setwise\EloquentSpatial\Objects\MultiPolygon;
 use MultiLineString as geoPHPMultiLineString;
 use MultiPoint as geoPHPMultiPoint;
 use MultiPolygon as geoPHPMultiPolygon;

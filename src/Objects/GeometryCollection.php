@@ -28,7 +28,6 @@ class GeometryCollection extends Geometry implements ArrayAccess
         if (is_array($geometries)) {
             $geometries = collect($geometries);
         }
-
         $this->geometries = $geometries;
         $this->srid = $srid;
 

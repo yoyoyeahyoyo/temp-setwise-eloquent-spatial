@@ -16,9 +16,9 @@ use Illuminate\Support\Traits\Macroable;
 use InvalidArgumentException;
 use JsonException;
 use JsonSerializable;
-use MatanYadaev\EloquentSpatial\AxisOrder;
-use MatanYadaev\EloquentSpatial\Factory;
-use MatanYadaev\EloquentSpatial\GeometryCast;
+use Setwise\EloquentSpatial\AxisOrder;
+use Setwise\EloquentSpatial\Factory;
+use Setwise\EloquentSpatial\GeometryCast;
 use Stringable;
 use WKB as geoPHPWkb;
 
@@ -222,6 +222,6 @@ abstract class Geometry implements Castable, Arrayable, Jsonable, JsonSerializab
             // @codeCoverageIgnoreEnd
         }
 
-        return DB::raw("ST_GeomFromText('{$wkt}', {$this->srid}, 'axis-order=long-lat')");
+        return DB::raw("ST_GeomFromText('{$wkt}', {$this->srid})");
     }
 }

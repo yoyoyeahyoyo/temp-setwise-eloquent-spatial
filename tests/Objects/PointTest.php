@@ -1,10 +1,10 @@
 <?php
 
 use Illuminate\Foundation\Testing\DatabaseMigrations;
-use MatanYadaev\EloquentSpatial\Enums\Srid;
-use MatanYadaev\EloquentSpatial\Objects\Geometry;
-use MatanYadaev\EloquentSpatial\Objects\Point;
-use MatanYadaev\EloquentSpatial\Tests\TestModels\TestPlace;
+use Setwise\EloquentSpatial\Enums\Srid;
+use Setwise\EloquentSpatial\Objects\Geometry;
+use Setwise\EloquentSpatial\Objects\Point;
+use Setwise\EloquentSpatial\Tests\TestModels\TestPlace;
 
 uses(DatabaseMigrations::class);
 

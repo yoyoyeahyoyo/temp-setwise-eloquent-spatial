@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace MatanYadaev\EloquentSpatial\Doctrine;
+namespace Setwise\EloquentSpatial\Doctrine;
 
 use Doctrine\DBAL\Platforms\AbstractPlatform;
 use Doctrine\DBAL\Types\Type;

@@ -1,9 +1,9 @@
 <?php
 
-namespace MatanYadaev\EloquentSpatial\Tests;
+namespace Setwise\EloquentSpatial\Tests;
 
 use Illuminate\Support\ServiceProvider;
-use MatanYadaev\EloquentSpatial\EloquentSpatialServiceProvider;
+use Setwise\EloquentSpatial\EloquentSpatialServiceProvider;
 use Orchestra\Testbench\TestCase as Orchestra;
 
 class TestCase extends Orchestra

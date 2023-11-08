@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace MatanYadaev\EloquentSpatial;
+namespace Setwise\EloquentSpatial;
 
 use Illuminate\Contracts\Database\Eloquent\CastsAttributes;
 use Illuminate\Contracts\Database\Query\Expression as ExpressionContract;
 use Illuminate\Database\Connection;
 use Illuminate\Database\Eloquent\Model;
 use InvalidArgumentException;
-use MatanYadaev\EloquentSpatial\Objects\Geometry;
+use Setwise\EloquentSpatial\Objects\Geometry;
 
 class GeometryCast implements CastsAttributes
 {

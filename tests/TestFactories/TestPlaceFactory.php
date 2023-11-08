@@ -1,9 +1,9 @@
 <?php
 
-namespace MatanYadaev\EloquentSpatial\Tests\TestFactories;
+namespace Setwise\EloquentSpatial\Tests\TestFactories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
-use MatanYadaev\EloquentSpatial\Tests\TestModels\TestPlace;
+use Setwise\EloquentSpatial\Tests\TestModels\TestPlace;
 
 /**
  * @extends Factory<TestPlace>

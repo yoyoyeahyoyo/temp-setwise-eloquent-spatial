@@ -1,7 +1,7 @@
 <?php
 
 namespace Setwise\EloquentSpatial\Objects;
-use  Setwise\EloquentSpatial\Geometry;
+use  Setwise\EloquentSpatial\Objects\Geometry;
 
 class Point extends Geometry
 {
@@ -20,7 +20,7 @@ class Point extends Geometry
     {
         $wktData = $this->getWktData();
 
-        return "ST_MAKEPOINT({$wktData})";
+        return "POINT({$wktData})";
     }
 
     public function getWktData(): string

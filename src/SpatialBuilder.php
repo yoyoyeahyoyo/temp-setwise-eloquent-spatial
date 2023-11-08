@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace MatanYadaev\EloquentSpatial;
+namespace Setwise\EloquentSpatial;
 
 use Illuminate\Contracts\Database\Query\Expression as ExpressionContract;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Facades\DB;
-use MatanYadaev\EloquentSpatial\Objects\Geometry;
+use Setwise\EloquentSpatial\Objects\Geometry;
 
 /**
  * @template TModel of \Illuminate\Database\Eloquent\Model

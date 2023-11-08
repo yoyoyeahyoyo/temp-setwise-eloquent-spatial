@@ -2,13 +2,13 @@ version: '3.8'
 
 services:
   db:
-    container_name: mysql-laravel-eloquent-spatial
-    image: mysql:8.0
+    container_name: postgres-laravel-eloquent-spatial
+    image: postgres
     environment:
       MYSQL_DATABASE: laravel_eloquent_spatial_test
       MYSQL_ALLOW_EMPTY_PASSWORD: true
     volumes:
-      - mysql_data:/var/lib/mysql
+      - postgres_data:/var/lib/postgres
     ports:
       - 3306:3306
     restart: unless-stopped
