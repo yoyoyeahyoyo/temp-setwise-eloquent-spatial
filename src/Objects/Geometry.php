@@ -74,8 +74,9 @@ abstract class Geometry implements Castable, Arrayable, Jsonable, JsonSerializab
         $srid = substr($wkb, 0, 4);
         // @phpstan-ignore-next-line
         $srid = unpack('L', $srid)[1];
-
-        $wkb = substr($wkb, 4);
+    
+        //Not sure why they were doing this, but we need these bits in the parser to detect postgres types
+        //$wkb = substr($wkb, 4);
 
         $geometry = Factory::parse($wkb);
         $geometry->srid = $srid;
