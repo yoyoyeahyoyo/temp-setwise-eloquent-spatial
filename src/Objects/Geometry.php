@@ -63,33 +63,35 @@ abstract class Geometry implements Castable, Arrayable, Jsonable, JsonSerializab
         return $sridInBinary.$wkbWithoutSrid;
     }
 
-    /**
-     * @param  string  $wkb
-     * @return static
-     *
-     * @throws InvalidArgumentException
-     */
-    public static function fromWkb(string $wkb): static
-    {
-        $srid = substr($wkb, 0, 4);
-        // @phpstan-ignore-next-line
-        $srid = unpack('L', $srid)[1];
-    
-        //Not sure why they were doing this, but we need these bits in the parser to detect postgres types
-        //$wkb = substr($wkb, 4);
+ /**
+   * @param  string  $wkb
+   * @return static
+   */
+  public static function fromWkb(string $wkb): static
+  {
+    if (ctype_xdigit($wkb)) {
+      // @codeCoverageIgnoreStart
+      $geometry = Factory::parse($wkb);
+      // @codeCoverageIgnoreEnd
+    } else {
+      $srid = substr($wkb, 0, 4);
+      // @phpstan-ignore-next-line
+      $srid = unpack('L', $srid)[1];
 
-        $geometry = Factory::parse($wkb);
-        $geometry->srid = $srid;
+      $wkb = substr($wkb, 4);
 
-        if (! ($geometry instanceof static)) {
-            throw new InvalidArgumentException(
-                sprintf('Expected %s, %s given.', static::class, $geometry::class)
-            );
-        }
-
-        return $geometry;
+      $geometry = Factory::parse($wkb);
+      $geometry->srid = $srid;
     }
 
+    if (! ($geometry instanceof static)) {
+      throw new InvalidArgumentException(
+        sprintf('Expected %s, %s given.', static::class, $geometry::class)
+      );
+    }
+
+    return $geometry;
+  }
     /**
      * @param  string  $wkt
      * @param  int  $srid
